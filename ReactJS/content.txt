@@ -1,0 +1,28 @@
+1.What is React and virtual DOM. 
+2.Component creation (structure). npm init react-app App
+3.Lifecycle methods.
+4.Styles and Events handling.
+5.Component reuse with states and props.
+6.Routes
+7.Redux
+
+
+Mounting : 
+
+constructor (props)	Before rendering #
+componentWillMount()	Don’t use this #
+render()	Render #
+componentDidMount()	After rendering (DOM available) #
+componentWillUnmount()	Before DOM removal #
+componentDidCatch()	Catch errors (16+) #
+
+Updating : 
+
+componentDidUpdate (prevProps, prevState, snapshot)	Use setState() here, but remember to compare props
+shouldComponentUpdate (newProps, newState)	Skips render() if returns false
+render()	Render
+componentDidUpdate (prevProps, prevState)	Operate on the DOM here
+
+
+
+
